@@ -18,7 +18,7 @@ function App() {
     <div className="app-container">
       <h1 className="title">Mahsulotlar</h1>
       <div className="products-container">
-        {products.map((product) => (
+        {products?.data?.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={product.name} className="product-image" />
             <div className="product-info">
